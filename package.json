@@ -4,6 +4,8 @@
   "description": "continuous deployment of simple javascript application",
   "author": "Eirik Bell",
   "homepage": "https://github.com/nerdschoolbergen/build-and-deploy",
+  "repository": "",
+  "license": "",
   "scripts": {
     "postinstall": "bower install"
   },
