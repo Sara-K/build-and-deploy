@@ -81,7 +81,7 @@ describe('the calculation controller', function () {
       });
     });
 
-    /*describe('minus operator', function () {
+    describe('minus operator', function () {
       var operator = 'minus';
 
       it('should calculate 2 - 2 = 0', function () {
@@ -107,7 +107,7 @@ describe('the calculation controller', function () {
 
       it('should calculate -100 - -20 = -80', function () {
         var ctrl = createController();
-        ctrl.calculate(-100, -20, operator);
+        ctrl.calculate(-100, -10, operator);
 
         expect(ctrl.result).toBe(-80);
       });
@@ -125,7 +125,7 @@ describe('the calculation controller', function () {
 
         expect(ctrl.result).toBe(10);
       });
-    });*/
+    });
 
     describe('divide operator', function () {
       var operator = 'divide';
