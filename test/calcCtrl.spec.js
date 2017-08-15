@@ -107,7 +107,7 @@ describe('the calculation controller', function () {
 
       it('should calculate -100 - -20 = -80', function () {
         var ctrl = createController();
-        ctrl.calculate(-100, -10, operator);
+        ctrl.calculate(-100, -20, operator);
 
         expect(ctrl.result).toBe(-80);
       });
@@ -176,11 +176,46 @@ describe('the calculation controller', function () {
     describe('multiply operator', function(){
       var operator = 'multiply';
 
-      it('should not be implemented', function(){
+      it('should calculate 2 * 0 = 0', function () {
         var ctrl = createController();
-        ctrl.calculate(10, 10, operator);
+        ctrl.calculate(2, 0, operator);
 
-        expect(ctrl.result).toBe('Operator not implemented');
+        expect(ctrl.result).toBe(0);
+      });
+
+      it('should calculate 10 * 4 = 40', function () {
+        var ctrl = createController();
+        ctrl.calculate(10, 4, operator);
+
+        expect(ctrl.result).toBe(40);
+      });
+
+      it('should calculate 5 * 5 = 25', function () {
+        var ctrl = createController();
+        ctrl.calculate(5, 5, operator);
+
+        expect(ctrl.result).toBe(25);
+      });
+
+      it('should calculate 1 * 20 = 20', function () {
+        var ctrl = createController();
+        ctrl.calculate(1, 20, operator);
+
+        expect(ctrl.result).toBe(20);
+      });
+
+      it('should calculate 1 * 7 = 7', function () {
+        var ctrl = createController();
+        ctrl.calculate(1, 7, operator);
+
+        expect(ctrl.result).toBe(7);
+      });
+
+      it('should calculate 10 * -1 = -10', function () {
+        var ctrl = createController();
+        ctrl.calculate(10, -1, operator);
+
+        expect(ctrl.result).toBe(-10);
       });
     });
 
