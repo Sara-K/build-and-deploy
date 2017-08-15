@@ -7,3 +7,9 @@ dependencies:
 test:
  override:
    - grunt test
+
+ deployment:
+ prod:
+   branch: master
+   heroku:
+     appname: sara-build-and-deploy
