@@ -12,4 +12,4 @@ test:
  prod:
    branch: master
    heroku:
-     appname: sara-build-and-deploy
+     appname: sara-build-and-depl
